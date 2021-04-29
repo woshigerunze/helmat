@@ -21,7 +21,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         //String createTable_BT_information="create table BT_information ( MacAddress varchar(100), Content varchar(100))";
         String createTable = "create table repeater (id integer primary key autoincrement,repeaterId text,high text,temperate text,power text,worktime text,time integer)";
         String safetyHat = "create table safetyHat (id integer primary key autoincrement,hatId text,MAC text,temperature text,high text,power text,time integer,status text,humidity text)";
-
         Log.d("建表","两张表");
         //db.execSQL(createTable_BT_information);
         db.execSQL(createTable);
